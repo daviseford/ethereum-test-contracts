@@ -1,0 +1,23 @@
+{
+  "name": "ethereum-test-contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daviseford/ethereum-test-contracts.git"
+  },
+  "author": "Davis Ford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daviseford/ethereum-test-contracts/issues"
+  },
+  "homepage": "https://github.com/daviseford/ethereum-test-contracts#readme",
+  "dependencies": {
+    "solc": "^0.4.19",
+    "web3": "^0.20.0"
+  }
+}
