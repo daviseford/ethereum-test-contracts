@@ -79,3 +79,33 @@
 18:38:33.920724 table@compaction committed F-1 S-111KiB Ke·0 D·3518 T·71.571165ms
 18:38:33.920976 table@remove removed @16
 18:38:33.921202 table@remove removed @15
+21:17:47.979300 db@close closing
+21:17:47.988969 db@close done T·9.68326ms
+=============== Jan 23, 2018 (EST) ===============
+17:12:34.261318 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:12:34.263484 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.01]
+17:12:34.263533 db@open opening
+17:12:34.263692 journal@recovery F·1
+17:12:34.266716 journal@recovery recovering @17
+17:12:34.382811 memdb@flush created L0@20 N·35327 S·1MiB "\x00\x01m..\v\xf8\xa9,v40023":"\xff\xefp..&r\x84,v60953"
+17:12:34.405604 version@stat F·[1 1] S·2MiB[1MiB 1MiB] Sc·[0.25 0.01]
+17:12:34.407300 db@janitor F·4 G·0
+17:12:34.407330 db@open done T·143.778616ms
+=============== Jan 23, 2018 (EST) ===============
+17:17:47.200224 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:17:47.200968 version@stat F·[1 1] S·2MiB[1MiB 1MiB] Sc·[0.25 0.01]
+17:17:47.200998 db@open opening
+17:17:47.201064 journal@recovery F·1
+17:17:47.201642 journal@recovery recovering @21
+17:17:47.203632 memdb@flush created L0@23 N·446 S·22KiB "\n4\xff..,\n\x92,v61616":"\xee{]..\xa2\x8e\x12,v61652"
+17:17:47.204436 version@stat F·[2 1] S·2MiB[1MiB 1MiB] Sc·[0.50 0.01]
+17:17:47.205303 db@janitor F·5 G·0
+17:17:47.205325 db@open done T·4.314331ms
+17:20:36.453961 table@compaction L0·2 -> L1·1 S·2MiB Q·62633
+17:20:36.534635 table@build created L1@26 N·37165 S·2MiB "\x00\x01m..\v\xf8\xa9,v40023":"\x82h\xbc..݊\xe8,v29900"
+17:20:36.543652 table@build created L1@27 N·4497 S·359KiB "\x82q\xf1..\x162\t,v32565":"\xff\xff,..\xae\xfa\xff,v15732"
+17:20:36.543718 version@stat F·[0 2] S·2MiB[0B 2MiB] Sc·[0.00 0.02]
+17:20:36.543910 table@compaction committed F-1 S-347KiB Ke·0 D·11242 T·89.894086ms
+17:20:36.544095 table@remove removed @23
+17:20:36.544325 table@remove removed @20
+17:20:36.544496 table@remove removed @19

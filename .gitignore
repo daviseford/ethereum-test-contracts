@@ -77,6 +77,7 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-chaindata/
+*chaindata/*
+private/geth*
 .idea
 node_modules/

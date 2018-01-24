@@ -1,0 +1,10 @@
+var Web3 = require('Web3')
+var web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'))
+var solc = require('solc')
+var sourceCode = fs.readFileSync('Greetings.sol').toString()
+var compiledCode = solc.compile(sourceCode)
+var contractABI = JSON.parse(compiledCode.contracts[':Greetings'].interface)
+var byteCode = compiledCode.contracts[':Greetings'].bytecode
+var greetingsContract = web3.eth.contract(contractABI)
+var greetingsDeployed = greetingsContract.new({data: '0x' + byteCode, from: web3.eth.accounts[0], gas: 470000})
+var greetingsInstance = greetingsContract.at(greetingsDeployed.address)
